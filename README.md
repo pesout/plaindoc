@@ -38,11 +38,11 @@ Paragraph can contain inline links: `(> https://example.com)`.
 **Bullets**
 
 ```txt
-	- Top level
-	- Also top level
-		- Nested item
-		- Other nested item
-	- Other top level
+- Top level
+- Also top level
+	- Nested item
+	- Other nested item
+- Other top level
 ```
 
 **Numbering**
@@ -143,7 +143,7 @@ SECOND TERM:
 
 ## References
 
-**In paragraph**
+**In a paragraph**
 
 ```txt
 This paragraph [1] contains references [2].
