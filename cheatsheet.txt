@@ -1,0 +1,138 @@
+@title: Plaindoc Cheatsheet
+@date:  2025-08-21
+@proj:  Plaindoc
+@tags:  txt, plaindoc, cheatsheet
+
+
+PLAINDOC CHEATSHEET
+===================
+
+Plaindoc is a formatting style for plaintext (.txt) documents where Markdown
+cannot be rendered graphically. This cheatsheet shows all components in use.
+
+
+Basics
+------
+
+- Leave 1 blank line between blocks
+- Keep ~80 characters per line
+
+
+Headings
+--------
+
+DOCUMENT TITLE
+==============
+
+Chapter
+-------
+
+[Subsection]
+
+
+Paragraphs and emphasis
+-----------------------
+
+This is text in a paragraph. No special formatting required.
+
+Some text can be *IMPORTANT*, contain /light emphasis/ and also =inlineCode()=.
+
+Paragraphs can contain inline links like this: (> https://example.com/docs).
+
+
+Lists
+-----
+
+[Bullets]
+
+- Top level
+- Also top level
+	- Nested item
+	- Other nested item
+- Other top level
+
+[Numbering]
+
+1) First
+2) Second
+3) Third
+
+[Checklist]
+
+[ ] Open
+[x] Done
+[-] Partial / In progress
+
+[Tasks with priorities]
+
+[L][ ] Low priority
+[M][ ] Medium priority
+[H][ ] High priority
+[C][ ] Critical priority
+
+
+Callouts
+--------
+
+[NOTE] A usage tip
+[INFO] Some interesting info
+[WARN] Beware of side effects
+[TODO] Finish something later
+
++-------------------------+
+| INFO: This is important |
++-------------------------+
+
+
+Code blocks
+-----------
+
+~~ (JAVASCRIPT)
+const log = (data) => {
+	console.log(data);
+	return data;
+}
+~~
+
+
+Tables
+------
+
+[Full table]
+
++----------+--------+-------+
+| Column A | B (ms) | C (%) |
++----------+--------+-------+
+| alpha    |  123   | 98.2  |
+| beta     |   87   | 76.0  |
++----------+--------+-------+
+
+[Minimal table]
+
+ Column A | B (ms) | C (%)
+----------+--------+-------
+ alpha    | 123    | 98.2
+ beta     |  87    | 76.0
+
+
+Definition lists
+----------------
+
+FIRST TERM:
+  Short explanation of the term.
+
+SECOND TERM:
+  Other short explanation of the term.
+
+
+References
+----------
+
+In a paragraph: This paragraph [1] contains references [2].
+
+At the end of the file:
+
+REFERENCES
+	[1] First reference: https://example.com/api/docs
+	[2] Second reference: https://about.example.com
+
